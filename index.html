@@ -13,8 +13,22 @@
         <h1>Untitled UI</h1>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Blog</a></li>
+            <li class="dropdown">
+                <a href="#">Products <img src="./assets/arrow.svg" /></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Top sales</a></li>
+                    <li><a href="#">Limited collection</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Blog <img src="./assets/arrow.svg" /></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Top rated</a></li>
+                    <li><a href="#">Subcription</a></li>
+                </ul>
+            </li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
@@ -34,32 +48,162 @@
         </div>
     </div>
     <main>
-        <div>
+        <div class="list-container">
             <h2>Recent blog posts</h2>
-            <div>
-                <div class="card-container">
-                    <div class="card-wrapper">
-                        <h2>Migrating to Linear 101</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Proin et molestie arcu. Donec.
-                        </p>
-                        <div class="author-wrapper">
-                            <img src="" alt="" />
-                            <p>Joe Doe</p>
-                            <p>19 Jan 2025</p>
+            <div class="cards-list-container">
+                <div class="cards-list-wrapper">
+                    <div class="card-container">
+                        <div class="card-wrapper">
+                            <img src="./assets/mockimg.jpg" alt="" />
+                            <div>
+                                <h2>Migrating to Linear 101</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin et molestie arcu. Donec.
+                                </p>
+                            </div>
+                            <div class="author-wrapper">
+                                <img class="profile-picture" src="./assets/profilePicture.jpg" alt="" />
+                                <p>Joe Doe</p>
+                                <p>19 Jan 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-wrapper">
+                            <img src="./assets/mockimg.jpg" alt="" />
+                            <div>
+                                <h2>Migrating to Linear 101</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin et molestie arcu. Donec.
+                                </p>
+                            </div>
+                            <div class="author-wrapper">
+                                <img class="profile-picture" src="./assets/profilePicture.jpg" alt="" />
+                                <p>Joe Doe</p>
+                                <p>19 Jan 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-wrapper">
+                            <img src="./assets/mockimg.jpg" alt="" />
+                            <div>
+                                <h2>Migrating to Linear 101</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin et molestie arcu. Donec.
+                                </p>
+                            </div>
+                            <div class="author-wrapper">
+                                <img class="profile-picture" src="./assets/profilePicture.jpg" alt="" />
+                                <p>Joe Doe</p>
+                                <p>19 Jan 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-wrapper">
+                            <img src="./assets/mockimg.jpg" alt="" />
+                            <div>
+                                <h2>Migrating to Linear 101</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin et molestie arcu. Donec.
+                                </p>
+                            </div>
+                            <div class="author-wrapper">
+                                <img class="profile-picture" src="./assets/profilePicture.jpg" alt="" />
+                                <p>Joe Doe</p>
+                                <p>19 Jan 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-wrapper">
+                            <img src="./assets/mockimg.jpg" alt="" />
+                            <div>
+                                <h2>Migrating to Linear 101</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin et molestie arcu. Donec.
+                                </p>
+                            </div>
+                            <div class="author-wrapper">
+                                <img class="profile-picture" src="./assets/profilePicture.jpg" alt="" />
+                                <p>Joe Doe</p>
+                                <p>19 Jan 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-wrapper">
+                            <img src="./assets/mockimg.jpg" alt="" />
+                            <div>
+                                <h2>Migrating to Linear 101</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Proin et molestie arcu. Donec.
+                                </p>
+                            </div>
+                            <div class="author-wrapper">
+                                <img class="profile-picture" src="./assets/profilePicture.jpg" alt="" />
+                                <p>Joe Doe</p>
+                                <p>19 Jan 2025</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button>Show more...</button>
+            <div class="button-wrapper"><button id="charcoal">Show more</button></div>
         </div>
     </main>
     <footer>
         <div class="footer-wrapper">
-
+            <h2>Let's get started on something great</h2>
+            <p>Join over 4000+ startups already growing with untitled</p>
+            <div class="buttons-wrapper">
+                <button id="transparent">Contact us</button>
+                <button id="grey">Get Started</button>
+            </div>
+            <div class="contacts-wrapper">
+                <ul>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Overview</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Solutions</a></li>
+                    <li><a href="">Tutorials</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Company</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">News</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Resources</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Help centre</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Social</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Linkedin</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="copiright-wrapper">
+                <h1>Untitled UI</h1>
+                <p>©2025 Untitled UI. All rights reserved</p>
+            </div>
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
