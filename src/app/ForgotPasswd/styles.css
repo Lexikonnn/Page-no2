@@ -187,6 +187,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 50vh;
     padding: 64px 0 64px 0;
 }
 
