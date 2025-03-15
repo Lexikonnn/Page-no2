@@ -247,27 +247,26 @@ main {
     background-color: #f5f5f5;
 }
 
-input:invalid {
-    border: 2px solid red;
-    outline: none;
-}
-
-#email{
+#email {
     background-image: url('../../../public/assets/email.svg');
     background-position: 10px center;
     background-repeat: no-repeat;
     background-size: 16px;
 }
 
-#password{
+#password {
     background-image: url('../../../public/assets/lock.svg');
     background-position: 10px center;
     background-repeat: no-repeat;
     background-size: 14px;
 }
 
-.credentials-wrapper input:focus {
+input:focus {
     outline: 2px solid var(--charcoal);
+}
+
+input:invalid {
+    outline: 2px solid red;
 }
 
 .nocredentials-wrapper {

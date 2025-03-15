@@ -25,15 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-
-    // Kliknutí mimo dropdown zavře menu (pouze pokud není hover)
-    document.addEventListener("click", function (event) {
-        if (!event.target.closest(".dropdown")) {
-            document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-                menu.style.opacity = "0";
-                menu.style.visibility = "hidden";
-                menu.style.transform = "translateY(10px)";
-            });
-        }
-    });
 });
