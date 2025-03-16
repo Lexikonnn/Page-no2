@@ -180,8 +180,6 @@ footer ul a {
     margin: 72px 32px;
 }
 
-
-
 main {
     display: flex;
     flex-direction: column;
@@ -194,7 +192,7 @@ main {
 .card-container {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     border-radius: 16px;
 }
 

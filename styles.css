@@ -184,22 +184,21 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: max-content;
 }
 
 .cards-list-wrapper {
-    display: grid;
-    max-width: fit-content;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
 }
 
+.card-container{
+    width: 350px;
+}
 
 .card-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 400px;
+    flex: 1 1 calc(33.333% - 24px);
     padding: 8px;
     cursor: pointer;
     transition: 120ms;
@@ -224,6 +223,7 @@ button:hover {
 
 .card-wrapper img {
     border-radius: 16px;
+    width: 100%;
 }
 
 .author-wrapper {
@@ -234,8 +234,8 @@ button:hover {
 }
 
 .profile-picture {
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
     border-radius: 50% !important;
     object-fit: cover;
     display: block;
