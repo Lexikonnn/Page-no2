@@ -13,78 +13,134 @@ body {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     padding: 16px 4px;
     background-color: #FFFF;
 }
 
-.logo {
-    font-size: 1.3rem;
-    color: var(--charcoal);
-    text-decoration: none;
-}
-
-ul {
+.navbar {
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
     list-style: none;
-}
-
-li a {
-    text-decoration: none;
     display: flex;
-    flex-direction: row;
-    gap: 8px;
-    color: var(--charcoal);
-    font-weight: 600;
 }
 
-.dropdown {
+.nav-links li {
     position: relative;
 }
 
-.dropdown-menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    left: 0;
-    top: 100%;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    list-style: none;
-    padding: 10px 0;
-    min-width: 150px;
-
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-    transition: opacity 200ms ease, transform 200ms ease;
-}
-
-.dropdown-menu li {
-    padding: 8px 20px;
-}
-
-.dropdown-menu li a {
+.nav-links a {
+    text-decoration: none;
     color: var(--charcoal);
-    padding: 8px 12px;
+    padding: 10px 15px;
     display: block;
 }
 
-.dropdown-menu li:hover {
-    background: #f5f5f5;
+.nav-links a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #FFFF;
+    border-radius: 16px;
+    padding: 12px 8px;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
 }
 
 .dropdown:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+    display: block;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    display: block;
+
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: var(--charcoal);
+    margin: 5px 0;
+}
+
+.logo {
+    color: var(--charcoal);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.signup-mobile {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+
+    .signup-btn {
+        display: none;
+    }
+
+    .signup-mobile {
+        background-color: var(--charcoal);
+        padding: 4px 0;
+        font-weight: 600;
+    }
+
+    .signup-mobile a {
+        color: #FFFF;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #FFFF;
+        position: absolute;
+        top: 85px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+    }
+
+    .dropdown.active .dropdown-menu {
+        display: block;
+    }
+
 }
 
 button {

@@ -10,35 +10,44 @@
 
 <body>
     <header>
-        <a href="./index.html" class="logo">
-            <h1>Untitled UI</h1>
-        </a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li class="dropdown">
-                <a href="#">Products <img src="./public/assets/arrow.svg" /></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Featured</a></li>
-                    <li><a href="#">Top sales</a></li>
-                    <li><a href="#">Limited collection</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#">Blog <img src="./public/assets/arrow.svg" /></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Top rated</a></li>
-                    <li><a href="#">Subcription</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-        <div>
-            <a href="./src/app/Signup/index.html">
-                <button class="charcoal">Sign Up</button>
+        <nav class="navbar">
+            <a class="logo" href="./index.html" class="logo">
+                <h1>Untitled UI</h1>
             </a>
-        </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Products <img src="./public/assets/arrow.svg"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Top rated</a></li>
+                        <li><a href="#">Season offer</a></li>
+                        <li><a href="#">Limited edition</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Blog <img src="./public/assets/arrow.svg"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Newest</a></li>
+                        <li><a href="#">Favourite</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About us</a></li>
+                <li class="signup-mobile"><a href="./src/app/Signup/index.html">Sign Up</a></li>
+            </ul>
+            <div class="signup-btn">
+                <a href="./src/app/Signup/index.html">
+                    <button class="charcoal">Sign Up</button>
+                </a>
+            </div>
+        </nav>
     </header>
     <div class="landing-container">
         <div class="landing-wrapper">
@@ -309,7 +318,7 @@
             </div>
         </div>
     </footer>
-    <script src="./dropdown.js"></script>
+    <script src="./src/util/dropdown.js"></script>
     <script src="./expand.js"></script>
 </body>
 
